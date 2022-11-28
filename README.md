@@ -24,3 +24,5 @@ Also, the following idea has popped into the mind: to check minimum and maximum 
 2) for each column of categorical feature a bar plot was built.
 It was found that in the column D_66 NAN values take almost 90% of the data. This is the highest level among all categorical features. But if we use model based on the tree-algorithms, then it tackles with the NAN values itself. In general, the maximum amount of unique values among categorical features is 8, it means that One-Hot Encoding will suit the model.
 Also as an idea of dropping some columns, which correlate with each other in a high level, I propose to work with the correlation matrix.
+
+28.11 - Alina Mikhaylenko: Built a gradient boosting model on one of the data chunks. After analyzing the results, I'm going to try to train the model on several chunks at once and see how the quality of the model changes for its further development.
