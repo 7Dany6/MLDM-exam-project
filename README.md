@@ -28,4 +28,4 @@ Also as an idea of dropping some columns, which correlate with each other in a h
 28.11 - Alina Mikhaylenko: Built a gradient boosting model on one of the data chunks. After analyzing the results, I'm going to try to train the model on several chunks at once and see how the quality of the model changes for its further development.
 
 29.11 - Dmitriy Grinchenko: trying a new approach of data tackling. The fact is that given data is an unbalanced panel. Standard well-known machine learning algorithms involve working with tabular data. To this end, I proposed the approach of "collapsing" the panel into a cross-sectional data. This approach assumes a transition from time series for each customer to new features extracted from these time series. Thus, an essential task of modeling is feature generation and selection. 
-Also, all data chunks were converted using the pickle library. It helps еo save memory and decrease time of loading data.
+Also, all data chunks were converted using the pickle library. It helps to save memory and decrease time of loading data.
