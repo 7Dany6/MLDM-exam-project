@@ -34,3 +34,9 @@ Also as an idea of dropping some columns, which correlate with each other in a h
 4. Fill NaN values. For example, for each client we can take a mean or median of the column;
 5. Collapse time series;
 
+29.11 - Dmitriy Grinchenko: trying a new approach of data tackling. The fact is that given data is an unbalanced panel. Standard well-known machine learning algorithms involve working with tabular data. To this end, I proposed the approach of "collapsing" the panel into a cross-sectional data. This approach assumes a transition from time series for each customer to new features extracted from these time series. Thus, an essential task of modeling is feature generation and selection. 
+Also, all data chunks were converted using the pickle library. It helps to save memory and decrease time of loading data.
+Insights for future implementation: fill missing values according to a two-tier strategy. Firstly, fill na's inside each time series based on its structure (e.g. ffill: propagate last valid observation forward to next valid backfil). Secondly, if for some customer, for some for some feature, there was no whole time series (all - na's) - use the values of the generated feature averaged over the entire sample (see the approach to generating features).
+
+last version of train_data is available at https://drive.google.com/drive/folders/1vmfkbtG4s8SLfsyLwO5vDTCfq65n4PPq?usp=share_link
+
