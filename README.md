@@ -39,6 +39,7 @@ last version of train_data is available at https://drive.google.com/drive/folder
 3. Tackle categorical features (e.g. One-Hot Encoding);
 4. Fill NaN values. For example, for each client we can take a mean or median of the column;
 5. Collapse time series;
+Thinking about data featuring, it seems reasonable to group data by a customer and apply aggregating functions to the columns. Perhaps, these should be separate experiments - with centring data and not.
 
 
 
