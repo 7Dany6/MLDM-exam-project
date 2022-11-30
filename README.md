@@ -13,7 +13,7 @@ But the problem has arised: to work with data we need the functionality of 'pand
 
 3) preprocess them in order to reduce the overall complexity;
 
-4) merge these files together to get one dataframe.
+4) merge these files together to get one dataframe - **this step in not appropriate, we can iterate through all chunks and it will accelarate the process of preprocessong/learning model and so on**.
 
 For preprocessing, first of all, we need to know types of columns. After the investigation, it was found that the majority of columns have the type of 'float64', which can be easily transformed to 'float32'. Also, we can preproccess given categorical variables.
 After the preproccessing, we have decreased the memory usage in two times. When coming to merging chunks in one dataframe, computational power of the computer did not allow to do this.
@@ -33,7 +33,7 @@ Insights for future implementation: fill missing values according to a two-tier 
 
 last version of train_data is available at https://drive.google.com/drive/folders/1vmfkbtG4s8SLfsyLwO5vDTCfq65n4PPq?usp=share_link
 
-29.11 - Daniil Sulimov: Due to the computational power of my laplop, futher experiments will be conveyed on the several chunks. All worth approaches wil be extrapolated to all dataframe. So, the first ideas popped into my mind: 
+29.11 - Daniil Sulimov: **Due to the computational power of my laplop, futher experiments will be conveyed on the several chunks**. All worth approaches wil be extrapolated to all dataframe. So, the first ideas popped into my mind: 
 1. Conduct a research related to outliers;
 2. Normalize data if outliers were found;
 3. Tackle categorical features (e.g. One-Hot Encoding);
