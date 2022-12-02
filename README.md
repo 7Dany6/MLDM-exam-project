@@ -47,6 +47,6 @@ UPD: futher the preprocessing of data implied work with categorical features, si
 
 02.12 - Daniil Sulimov: After data engineering work, comes the process of learning the model. At first, RandomForestClassifier was picked. The only parameter,which was adjusted - 'class_weight', but keeping in mind that we have imbalanced classes - we need to optimize parameters. Missing values were solved in the most explicit way - they were filled with 0 values. Definitely, the dataset was divided into train and test parts with the ratio of 0.3. The results of the modelling in this way are presened in the file results_randomforest#1.jpg. The model could be enhanced by: 
 1) cross-validation;
-2) optimizing the parameters;
+2) optimizing the hyperparameters;
 3) tackling missing values in more sophisticated way.
 Again, the question of resampling arises.
