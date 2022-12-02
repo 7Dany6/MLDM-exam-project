@@ -45,5 +45,8 @@ Thinking about data featuring, it seems reasonable to group data by a customer a
 Histograms of numerical features have shown that two columns - 'B_31' and 'D_87' are binary and should be excluded from the list of numerical features. Talking about outliers, a lot of columns show a certain kind of skewness. I think, to tackle them we should use scaling. But the whole picture is not that dramatic, as the majority of data is distributed before 0 and 1 or in smaller intervals and ,hence, deviation will not that huge. The computations have shown: Total deviation before scaling data is: 60.932323658918094. The next step was to develop features: the data was grouped by 'customer_ID' and several aggregation functions were applied. The total number of columns after that became 875 with 8294 rows (only first chunk was used). 
 UPD: futher the preprocessing of data implied work with categorical features, since aggregate functions for numerical columns do not fit. And, finally, generated features were united together in one dataframe.
 
-
-
+02.12 - Daniil Sulimov: After data engineering work, comes the process of learning the model. At first, RandomForestClassifier was picked. The only parameter,which was adjusted - 'class_weight', but keeping in mind that we have imbalanced classes - we need to optimize parameters. Missing values were solved in the most explicit way - they were filled with 0 values. Definitely, the dataset was divided into train and test parts with the ratio of 0.3. The results of the modelling in this way are presened in the file results_randomforest#1.jpg. The model could be enhanced by: 
+1) cross-validation;
+2) optimizing the parameters;
+3) tackling missing values in more sophisticated way.
+Again, the question of resampling arises.
