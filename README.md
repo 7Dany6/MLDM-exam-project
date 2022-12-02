@@ -43,6 +43,7 @@ Thinking about data featuring, it seems reasonable to group data by a customer a
 
 30.11 - Daniil Sulimov: After building a distribution of train labels, it was found out that we have more than 74% for target '0' and only 26% for '1'. It means, that we're dealing with imbalanced data and we should keep it in mind. For example, this is a case of using resampling. We can oversample minority class or undersaple the majority and get a balaced dataset eventually. 
 Histograms of numerical features have shown that two columns - 'B_31' and 'D_87' are binary and should be excluded from the list of numerical features. Talking about outliers, a lot of columns show a certain kind of skewness. I think, to tackle them we should use scaling. But the whole picture is not that dramatic, as the majority of data is distributed before 0 and 1 or in smaller intervals and ,hence, deviation will not that huge. The computations have shown: Total deviation before scaling data is: 60.932323658918094. The next step was to develop features: the data was grouped by 'customer_ID' and several aggregation functions were applied. The total number of columns after that became 875 with 8294 rows (only first chunk was used). 
+UPD: futher the preprocessing of data implied work with categorical features, since aggregate functions for numerical columns do not fit. And, finally, generated features were united together in one dataframe.
 
 
 
