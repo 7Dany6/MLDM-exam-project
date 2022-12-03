@@ -68,4 +68,4 @@ Handling missing values. Investigate ways to fill in missing values for entirely
 
 Focus on gradient boost implementing
 
-
+03.12 - Alina Mikhailenko: When I training the gradient boosting models (LGBM, CatBoost), an accuracy of 79 - 81% was achieved, but at the stage of analyzing the results by features, it became clear that I was made a mistake in data processing, the wrong file was taken for the test and it was loaded wrong. In the coming days I'm going to work on this issue, a notebook with models + a notebook with data analysis will be uploaded.
