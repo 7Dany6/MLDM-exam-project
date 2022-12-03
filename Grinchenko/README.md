@@ -1,4 +1,4 @@
-All data is available at https://drive.google.com/drive/folders/1vmfkbtG4s8SLfsyLwO5vDTCfq65n4PPq?usp=sharing
+All data and additional files are available at https://drive.google.com/drive/folders/1vmfkbtG4s8SLfsyLwO5vDTCfq65n4PPq?usp=sharing
 
 pipeline: preprocessing -> preparing_for_feature_generation -> feature_extracting -> RandomForest_(first_attempt)
 
