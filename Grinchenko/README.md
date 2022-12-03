@@ -9,7 +9,7 @@ All ipynbs contain comprehensive comments
 
 Insights for future work:
 
-1. Categorical feature encoding. Proposed approach - mean target encoding. Encoded on this way time serieses are more suitable for feature extraction and do not creates so much columns as OneHotEncoder
+1. Categorical feature encoding. Proposed approach - mean target encoding. Encoded on this way time serieses are more suitable for feature extraction and do not create so much columns as OneHotEncoder
 
 2. Handling missing values. Investigate ways to fill in missing values for entirely empty time serieses (for separate customers). Maybe consider encoding existing empty serieses as categorical features
 
