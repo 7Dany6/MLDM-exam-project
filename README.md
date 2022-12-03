@@ -50,3 +50,22 @@ UPD: futher the preprocessing of data implied work with categorical features, si
 2) optimizing the hyperparameters;
 3) tackling missing values in more sophisticated way.
 Again, the question of resampling arises.
+
+03.12 - Dmitriy Grinchenko:
+All data and additional files are available at https://drive.google.com/drive/folders/1vmfkbtG4s8SLfsyLwO5vDTCfq65n4PPq?usp=sharing
+
+pipeline: preprocessing -> preparing_for_feature_generation -> feature_extracting -> RandomForest_(first_attempt)
+
+all calculations were done with the whole train dataset on my local machine
+
+All ipynbs contain comprehensive comments
+
+Insights for future work:
+
+Categorical feature encoding. Proposed approach - mean target encoding. Encoded on this way time serieses are more suitable for feature extraction and do not creates so much columns as OneHotEncoder
+
+Handling missing values. Investigate ways to fill in missing values for entirely empty time serieses (for separate customers). Maybe consider encoding existing empty serieses as categorical features
+
+Focus on gradient boost implementing
+
+
