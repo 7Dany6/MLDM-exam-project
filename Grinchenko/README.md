@@ -12,3 +12,5 @@ Insights for future work:
 2. Handling missing values. Investigate ways to fill in missing values for entirely empty time serieses (for separate customers). Maybe consider encoding existing empty serieses as categorical features
 
 3. Focus on gradient boost implementing
+
+(all calculations were done on my local machine)
