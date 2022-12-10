@@ -71,3 +71,5 @@ Focus on gradient boost implementing
 03.12 - Alina Mikhailenko: When I training the gradient boosting models (LGBM, CatBoost), an accuracy of 79 - 81% was achieved, but at the stage of analyzing the results by features, it became clear that I was made a mistake in data processing, the wrong file was taken for the test and it was loaded wrong. In the coming days I'm going to work on this issue, a notebook with models + a notebook with data analysis will be uploaded.
 
 05.12 - Daniil Sulimov: It seems undoable to conduct GridSearch to all data. I propose: in order to optimize hyper-parameters of the model (e.g. attepmts in RandomForest we can do it on several chunks and try to guess it will work the same for others).
+
+10.12 - Daniil Sulimov: Having implemented ideas of 'Random Forest' approaches, it seems reasonable to conduct models (e.g. 'Logistic Regression', 'SVM') and compare results. After that the best model could be chosen and presented.
