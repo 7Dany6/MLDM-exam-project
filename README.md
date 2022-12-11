@@ -73,3 +73,5 @@ Focus on gradient boost implementing
 05.12 - Daniil Sulimov: It seems undoable to conduct GridSearch to all data. I propose: in order to optimize hyper-parameters of the model (e.g. attepmts in RandomForest we can do it on several chunks and try to guess it will work the same for others).
 
 10.12 - Daniil Sulimov: Having implemented ideas of 'Random Forest' approaches, it seems reasonable to conduct models (e.g. 'Logistic Regression', 'SVM') and compare results. After that the best model could be chosen and presented.
+
+11.12 - Daniil Sulimov: Two new models were developed. One of them is related to SVM with SGD training, using SGDClassifier. Another one represents RandomForest with the usage of new preprocessed data, available by the link above. The results have been presented in the last uploaded file. In general, the best model (RandomForest) has been achieved so far with the accuracy of 0.875 and roc_auc = 0.934971.
