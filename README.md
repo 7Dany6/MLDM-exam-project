@@ -75,3 +75,6 @@ Focus on gradient boost implementing
 10.12 - Daniil Sulimov: Having implemented ideas of 'Random Forest' approaches, it seems reasonable to conduct models (e.g. 'Logistic Regression', 'SVM') and compare results. After that the best model could be chosen and presented.
 
 11.12 - Daniil Sulimov: Two new models were developed. One of them is related to SVM with SGD training, using SGDClassifier. Another one represents RandomForest with the usage of new preprocessed data, available by the link above. The results have been presented in the last uploaded file. In general, the best model (RandomForest) has been achieved so far with the accuracy of 0.875 and roc_auc = 0.934971.
+
+14.12 - Daniil Sulimov: One-Hot Encoding was implemented, keeping this in mind, SVM and RandomForest models were rebuilt. New model 'LogisticRegression' was created. Taking into account imbalanced data, class weights were changed. After that I counducted a comparison between 3 final models and created a picture with ROC-AUC curves. 
+RandomForest has been considered as the best model with increased values of metrics (comparing to the previous attempt). The picture has been uploaded to the repository.
