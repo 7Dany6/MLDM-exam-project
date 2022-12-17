@@ -16,3 +16,9 @@ All data and additional files are available at https://drive.google.com/drive/fo
     2. Handling missing values. Investigate ways to fill in missing values for entirely empty time serieses (for separate customers). Maybe consider encoding existing empty serieses as categorical features
 
     3. Focus on gradient boost implementing
+
+**Attempt_2**
+    
+    More accurate data preprocessing.
+    Custom feature extraction
+    Gradient Boosting implementing 
