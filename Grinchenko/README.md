@@ -22,3 +22,4 @@ All data and additional files are available at https://drive.google.com/drive/fo
     More accurate data preprocessing.
     Custom feature extraction
     Gradient Boosting implementing 
+    All steps commented in ipynbs
